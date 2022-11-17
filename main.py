@@ -20,10 +20,11 @@ def edit_contact():
     search_name = input("Please enter the name you want to edit: ")
     for x in range(len(contact_Names)):
         if(contact_Names[x] == search_name):
+            index_Val = x
             edited_Name = input("Please enter the new name: ")
             edited_Phone = input("Please enter the new phone number: ")
             edited_Email = input("Please enter the new email address: ")
-    return edited_Email, edited_Phone, edited_Name
+    return index_Val, edited_Email, edited_Phone, edited_Name
 
 def new_contact():
     add_Name = input("Please enter the new name: ")
@@ -36,13 +37,11 @@ def new_contact():
 
 def remove_contact():
     search_name = input("Please enter the name you want to search: ")
-    #for x in range(len(contact_Names)):
-    #    if(contact_Names[x] == search_name):
+    for x in range(len(contact_Names)):
+        if(contact_Names[x] == search_name):
+            contact_Email.remove(search_name)
             
-
-
-
-
+            
 
 
 menu = ("1. Display Contact Names \n2. Search for Contact \n3. \
@@ -56,7 +55,7 @@ while(loop):
     elif selection == "2":
         search_contact()
     elif selection == "3":
-        contact_Names[x], contact_Number[x], contact_Email[x]= edit_contact()
+        contact_Names[], contact_Number[x], contact_Email[x]= edit_contact()
     elif selection == "4":
         new_contact()
     elif selection == "5":

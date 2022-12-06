@@ -1,0 +1,22 @@
+[
+  {
+    "name" : "John Doe",
+    "email" : "jondoe@gmail.com",
+    "number" : "907-376-0073"
+  },
+  {
+    "name" : "Sarthak Agarwal",
+    "email" : "s.agarwal1@share.epsb.ca",
+    "number" : "982-964-3068"
+  },
+  {
+    "name" : "Mary Poppins",
+    "email" : "marypoppins234@outlook.com",
+    "number" : "292-350-9921"
+  },
+  {
+    "name" : "Tom Hanks",
+    "email" : "thanks@yahoo.com",
+    "number" : "629-246-5416"
+  }
+]
